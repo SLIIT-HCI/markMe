@@ -6,6 +6,7 @@ print('Welcome to markMe!')
 kw = getKeywords().getKeys()
 
 
+#return the keyword order in the Marking scheme
 def getKeyOrder(classes):
     keywordorder = []
     for i in range (0, len(classes)):
@@ -17,7 +18,8 @@ def getKeyOrder(classes):
                 keywordorder.append([i,k,word.span()[0]])
 
     return keywordorder
-    
+
+#return the keyword order in the answer scripts
 def getKeyOrderA(ans):
     keywordorder = []
     for k in range (0,len(kw)):        
@@ -32,11 +34,12 @@ def getKeyOrderA(ans):
 
 
 
-q1 = readMS('questions/2a/Beta01.java')
-ans = open('IT18151152/Beta01/src/beta01/IShow.java')
+q1 = readMS('questions/2a/Beta01.java') #reading the questions: marking scheme
+ans = open('IT18151152/Beta01/src/beta01/IShow.java')# answer script
 a = ans.read()
 an = []
 
+# attempt to identify the keyword order
 for i in range(0,len(kw)):
     word = re.search(kw[i], a, flags=0)
     if word:

@@ -1,3 +1,5 @@
+#This is an attempt to manually evaluate the answer script by hard coding the marking steps
+
 # Ask the user to enter the names of files to compare
 fname1 = input("Enter the first filename: ")
 # Open file for reading in text mode (default mode)

@@ -11,7 +11,7 @@ This is an attempt to automate the marking of the subject "Object Oriented Progr
 ### Prerequisites
 * Python 2.7 - [https://www.python.org/downloads/release/python-2718/](https://www.python.org/downloads/release/python-2718/)
 
-### Setting Up
+### Important Notes
 * Clone this repository to a suitable location e.g.`~/markMe`
 * `markMe.py` is the main script
 * in `markMeNew.py`, Marking scheme tests are manually setuped

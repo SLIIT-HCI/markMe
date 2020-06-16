@@ -3,6 +3,7 @@ class getKeywords:
     def __init__(self):
         self.keywords = []
 
+    #read the keywords.txt and retrun a list of keywords
     def getKeys(self):
         keyFile = open('assets/keywords.txt')
         keyFileRead = keyFile.read()
